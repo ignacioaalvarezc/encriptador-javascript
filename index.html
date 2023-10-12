@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <!--Preconexión-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--Estilos-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap">
+    <link rel="stylesheet" href="./style.css">
+    <!--Título-->
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <!--Logo-->
+    <header>
+        <img class="logo" src="img/logo.png" alt="logo del encriptador" class="logo">
+    </header>
+    <main>
+        <!--Area de texto para ingresar mensaje a encriptar-->
+        <section class="bloque-texto">
+            <div class="contenedor-texto">
+                <textarea placeholder="Ingrese el texto aquí..." class="texto"></textarea>
+            </div>
+            <!--Area de condición para el texto-->
+            <div class="condicion">
+                <img src="img/alerta.svg" alt="alerta" class="alerta">
+                <p class="condicion-texto">Ingrese el texto sin acentos.</p>
+            </div>
+            <!--Area de botones de encriptado-->
+            <div class="contenedor-botones">
+                <input type="button" class="btn-encriptar btn" value="Encriptar">
+                <input type="button" class="btn-desencriptar btn" value="Desencriptar">
+                <input type="button" class="btn-pegar btn" value="Pegar">
+            </div>
+        </section>
+        <!--Area del texto resultante-->
+        <section class="bloque-resultado">
+            <div class="contenedor-imagen">
+                <img src="img/lock.png" alt="imagen" class="img-lock">
+            </div>
+            <div class="contenedor-parrafo">
+                <h3 class="titulo-sin-resultado">Ningún mensaje fue <br> encontrado</h3>
+                <p class="texto-sin-resultado">Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="contenedor-copiar">
+                <input type="button" class="btn-copiar btn" value="Copiar">  
+            </div>
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
